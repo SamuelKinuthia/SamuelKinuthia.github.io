@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Samuel Kinuthia">
+	<meta name="keyword" content="development,Front-end,software,responsive">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="30">
+	<meta name="description" content="My personal portfolio">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.rel{
+			background-color: maroon;
+			position: relative;
+		}
+		.abs{
+			position: absolute;
+			display: none;
+			min-width: 200px;
+			box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+			z-index: 1;
+			background-color: lightgrey;
+			overflow: auto;
+		}
+		.abs a{
+			text-align: left;
+			padding: 10px 12px;
+			color: #000;
+			text-decoration: none;
+			display: block;
+		}
+		.abs a:hover{
+			background-color: #444;
+		}
+		.btn{
+			background-color: dodgerblue;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+		  }
+		  .rel:hover .abs{
+		  	display: block;
+		  }
+		  img{
+		  	object-fit: cover;
+		  	width: 100%;
+		  	height: 500px;
+		  	opacity: 0.5;
+		  }
+		  .pic{
+		  	position: relative;
+		  	display: block;
+		  }
+		  .bton{
+		  	position: absolute;
+            padding: 10px 15px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            border: 2px solid orange;
+            border-radius: 5px;
+		  }
+		  .bton a{
+		  	text-decoration: none;
+		  	color: orange;
+		  	font-size: 18px;
+		  }
+		  .lef{
+		  	position: absolute;
+		  	left: 5px;
+		  	top: 8px;
+		  	color: #222;
+		  	font-size: 25px;
+		  	color: orange;
+		  }
+		  .rig{
+		  	position: absolute;
+		  	font-size: 25px;
+		  	top: 8px;
+		  	right: 5px;
+		  	color: orange;
+		  }
+		  .leb{
+		  	color: orange;
+		  	position: absolute;
+		  	font-size: 25px;
+		  	left: 10px;
+		  	bottom: 20px;
+		  }
+		  .rib{
+		  	position: absolute;
+		  	font-size: 25px;
+		  	color: orange;
+		  	right: 10px;
+		  	bottom: 20px;
+		  }
+		  .fle{
+		  	display: flex;
+		  	flex-wrap: wrap;
+		  }
+		  .sev{
+		  	flex: 70%;
+		  	background-color: lightgrey;
+		  	padding: 10px;
+		  }
+		  .thir{
+		  	flex: 30%;
+		  	background-color: lightgrey;
+		  	padding: 10px;
+		  }
+		  .col{
+		  	background-color: #f1f1f1;
+		  	padding: 0 5px;
+		  }
+	        .bton: hover{
+             background-color: #222;
+             border: 2px solid white;
+	        }
+	        @media only screen and (max-width: 600px) {
+	        	.sev, .thir{
+	        		flex-direction: column;
+	        	}
+	        }
+
+	</style>
+</head>
+<body>
+	<div style="background-color: maroon; text-align: center; font-size:16px; color:white;padding: 15px;">
+		<h1>Samuel Kinuthia</h1>
+	</div>
+     <div class="stk">
+     	<div class="rel">
+     	<button class="btn">&#9776;</button>
+     	<div class ="abs">
+     		<a href="#">Home</a>
+     		<a href="#">Address</a>
+     		<a href="#">Contact</a>
+     		<a href="#">Other</a>
+     	</div>
+     </div>
+     </div>
+     <div class= 'fle'>
+     	<div class="sev">
+     	<div class="pic">
+     		<img src="trevsam.jpg" alt="Trevsam" width="1000">
+     		<button class="bton"><a href="#">Read More &raquo;</a></button>
+     	</div>
+     	<div class="col">
+     		<h2>PROFESSIONAL SUMMARY</h2>
+     		<p> A passionate Software developer professional with 1+ years' of remarkable background in overseeing all aspect of sofwtare development life cycle. Proven experience in writing clean and optimized codes and responsive in designing, implementing, testing and upgrading software. I'm an expert in building and maintaining responsive website and web application in the technology and service industry. Proficient at utilizing a wide variety of programs and tools to provide high quality cost effective applications to boost organizational efficiency and productivity. Highly skilled in HTML5, CSS3, Javascript, JQuery, Java and PHP alongside modern libraries and frameworks. Interested about accessibility and usability of web and android applications   
+     	</div>  
+     	<div class="col">
+     		<h2>KEY SKILLS</h2>
+     		<ul>
+              <li> HTML5</li>
+              <li> CSS </li>
+              <li> Javascript </li>
+              <li> JQuery </li>
+              <li> Responsive Web Design </li>
+              <li> PHP </li>
+              <li> Bootstrap </li>
+              <li> Java </li>
+              <li> MS SQL Server </li>
+              <li> MySQL </li>
+              <li> Data structures and algorithms </li>
+              <li> JSON </li>
+              <li> Data visualization using Power BI, Tableau, R, Python </li>
+          </ul>
+     	</div>
+     	<div class="col">
+     		<h2> EXPERIENCE </h2>
+     		<h3> Full stack developer (Trevsam Technologies, Aug 2021 - Present)</h3>
+            <div><b>Duties and Responsibilities</b></div>
+            <ul style="list-style-type: square;">
+            	<li> Managed,optimised and updated database as neccessary </li>
+            	<li> Planned, wrote and debugged web applications and software with complete accuracy</li>
+            	<li> Developed app integration with REST/SOAP together with other APIs for social media, google maps and payment processors  </li>
+            	<li> Enforced an innovative approach to improve the client's web reporting system, which effectively reduced financial tracking analysis time by 50%.</li>
+            	<li> Used real-time data processing, data storage, Machine learning and Artificial Intelligence to solve challenging dataset problems</li>
+            </ul>
+            <div><b>Key Accomplishment</b></div>
+            <ul style="list-style-type:square;">
+            	<li>Maximized applications' efficiency, operability and flexibility.</li>
+            	<li>Achieved code re-usability by writing clean and accurate codes.</li>
+            </ul>
+     	</div>
+     </div>
+     <div class="thir">
+     	<div class="col">
+     		<h2> PROJECTS </h2>
+     		<ol>
+     		<li><h3> Phishing website detection system using Machine Learning.</h3></li>
+     		<div><b>Fourth year project</b> Jan 2020 - April 2020</div>
+     		<li><h3>Personal Website and Portfolio</h3></li>
+     		<div><b>Freelance Software engineer</b> Jan 2019 - April 2020 </div>
+     	</ol>
+     	</div>
+     	<div class="col">
+     		<h2> EDUCATION </h2>
+     		<h3>Bachelors of Science in Computer Science.</h3>
+     		<div><b>St Pauls University</b> <i>Jan 2017 - April 2020</i></div>
+     		<div><i>Attained a 2<sup>nd</sup> Class Honors Upper Division</i></div>
+     		<h3>Kenya Certificate Of Secondary Education.</h3>
+     		<div><b>Namachanja High School</b>  <i>Feb 2013 - Dec 2016</i></div>
+     		<div><i>Attained a Mean Grade of B+ (68 points)</i></div>
+     	</div>
+     	<div class="col">
+     		<h2>LANGUAGES</h2>
+     		<ul>
+     			<li>English (Fluent)</li>
+     			<li>Kiswahili (Conversational)</li>
+     		</ul>
+     	</div>
+     	<div class="col">
+     		<h2> ACHIEVEMENTS </h2>
+     		<ul>
+     			<li>Awarded as the best employ of the month at Trevsam Technologies for two consecutive months</li>
+     			<li>Single-handedly and successfully debugged complex code written by my other colleagues in a fast and efficient manner</li>
+     		</ul>
+     	</div>
+     </div>
+ </div>
+ <div style="text-align: center; padding:20px; background-color:#4caf50; color: #fff; font-size: 20px;">
+ 	&copy;All rights reserved. Designed and maintained by Trevsam Technologies
+ </div>
+</body>
+</html>
